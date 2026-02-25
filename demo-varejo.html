@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor & Cia | Padaria e Empório</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .handwriting { font-family: 'Caveat', cursive; }
+        .promo-badge { background: linear-gradient(45deg, #f43f5e, #fbbf24); }
+        .hero-food {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+            url('https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-orange-50/30 text-gray-800">
+
+    <nav class="bg-white shadow-sm py-4 px-6 flex justify-between items-center sticky top-0 z-50">
+        <div class="text-2xl font-extrabold text-orange-600 tracking-tight">Sabor<span class="text-orange-400">&</span>Cia</div>
+        <div class="space-x-4">
+            <a href="https://wa.me/5551992033783" class="bg-green-500 text-white px-5 py-2 rounded-full font-bold text-sm hover:bg-green-600 transition flex items-center gap-2">
+                <i class="fab fa-whatsapp"></i> Peça Agora
+            </a>
+        </div>
+    </nav>
+
+    <section class="h-[70vh] hero-food flex items-center justify-center text-center px-4">
+        <div class="max-w-3xl">
+            <span class="handwriting text-3xl text-orange-300 mb-2 block">Saindo agora do forno...</span>
+            <h1 class="text-4xl md:text-6xl text-white font-extrabold mb-6 leading-tight">O sabor que transforma o seu dia.</h1>
+            <p class="text-white/90 text-lg mb-8 font-light">Do pão quentinho aos produtos selecionados para sua dispensa, levamos o melhor até você.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#ofertas" class="bg-orange-500 text-white px-8 py-3 rounded-xl font-bold hover:bg-orange-600 transition shadow-lg">Ver Ofertas do Dia</a>
+                <a href="#" class="bg-white text-orange-600 px-8 py-3 rounded-xl font-bold hover:bg-gray-100 transition shadow-lg">Nossa Unidade</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="ofertas" class="py-16 max-w-7xl mx-auto px-6">
+        <div class="flex justify-between items-end mb-10">
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900">Ofertas Imperdíveis</h2>
+                <p class="text-orange-600 font-semibold handwriting text-xl">Preços válidos só para hoje!</p>
+            </div>
+            <a href="#" class="text-orange-600 font-bold hover:underline">Ver encarte completo →</a>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-orange-100 hover:shadow-xl transition relative overflow-hidden group">
+                <div class="promo-badge absolute top-3 left-3 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Oferta</div>
+                <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=400&q=80" class="w-full h-40 object-cover rounded-2xl mb-4 group-hover:scale-105 transition">
+                <h3 class="font-bold text-gray-800">Pão Artesanal</h3>
+                <p class="text-xs text-gray-500 mb-3">500g - Assado na hora</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-xl font-extrabold text-gray-900">R$ 8,90</span>
+                    <button class="bg-orange-100 text-orange-600 p-2 rounded-lg hover:bg-orange-600 hover:text-white transition">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-orange-100 hover:shadow-xl transition relative overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1589533610925-1cffc309ebaa?auto=format&fit=crop&w=400&q=80" class="w-full h-40 object-cover rounded-2xl mb-4 group-hover:scale-105 transition">
+                <h3 class="font-bold text-gray-800">Bolo Caseiro</h3>
+                <p class="text-xs text-gray-500 mb-3">Sabor Cenoura com Chocolate</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-xl font-extrabold text-gray-900">R$ 18,50</span>
+                    <button class="bg-orange-100 text-orange-600 p-2 rounded-lg hover:bg-orange-600 hover:text-white transition">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+
+             <div class="bg-white p-4 rounded-3xl shadow-sm border border-orange-100 hover:shadow-xl transition relative overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=400&q=80" class="w-full h-40 object-cover rounded-2xl mb-4 group-hover:scale-105 transition">
+                <h3 class="font-bold text-gray-800">Macarrão Fresco</h3>
+                <p class="text-xs text-gray-500 mb-3">Produção Própria 500g</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-xl font-extrabold text-gray-900">R$ 12,00</span>
+                    <button class="bg-orange-100 text-orange-600 p-2 rounded-lg hover:bg-orange-600 hover:text-white transition">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-3xl shadow-sm border border-orange-100 hover:shadow-xl transition relative overflow-hidden group">
+                <div class="promo-badge absolute top-3 left-3 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Novo</div>
+                <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=400&q=80" class="w-full h-40 object-cover rounded-2xl mb-4 group-hover:scale-105 transition">
+                <h3 class="font-bold text-gray-800">Combo Café</h3>
+                <p class="text-xs text-gray-500 mb-3">Pão + Café G + Fatia Bolo</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-xl font-extrabold text-gray-900">R$ 25,00</span>
+                    <button class="bg-orange-100 text-orange-600 p-2 rounded-lg hover:bg-orange-600 hover:text-white transition">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <h4 class="text-xl font-bold mb-2">Andre Pawlas Tech</h4>
+                <p class="text-gray-400 text-sm">Criando experiências digitais que vendem.</p>
+            </div>
+            <div class="flex gap-6 text-2xl">
+                <i class="fab fa-instagram hover:text-orange-500 cursor-pointer transition"></i>
+                <i class="fab fa-facebook hover:text-orange-500 cursor-pointer transition"></i>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
